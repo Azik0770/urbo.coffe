@@ -69,7 +69,11 @@ footer{padding:30px 5vw;text-align:center;color:var(--muted);font-size:.9rem;bor
 
 <header>
   <nav>
+<<<<<<< HEAD
     <a class="logo" href="#top" id="top">urbo.coffee</a>
+=======
+    <a class="logo" href="#top" id="top">urbo.coffe</a>
+>>>>>>> b1217df2146ab3b7d1f1c3f0e670bff4c398a964
     <div class="nav-links">
       <a href="#menu">Меню</a>
       <a href="#preorder">Предзаказ</a>
@@ -82,7 +86,11 @@ footer{padding:30px 5vw;text-align:center;color:var(--muted);font-size:.9rem;bor
 
 <section class="hero">
   <div>
+<<<<<<< HEAD
     <h1>urbo.coffee</h1>
+=======
+    <h1>urbo.coffe</h1>
+>>>>>>> b1217df2146ab3b7d1f1c3f0e670bff4c398a964
     <p>Свежая обжарка, авторские напитки и уютное место в центре города. Закажите заранее — заберите без очереди.</p>
     <a class="btn" href="#preorder">Сделать предзаказ</a>
     &nbsp;
@@ -138,7 +146,11 @@ footer{padding:30px 5vw;text-align:center;color:var(--muted);font-size:.9rem;bor
 <section id="about">
   <div class="wrap">
     <h2>О кофейне</h2>
+<<<<<<< HEAD
     <p class="lead">urbo.coffee — небольшая кофейня, где мы обжариваем зерно сами и верим, что хороший кофе начинается с внимания к деталям.</p>
+=======
+    <p class="lead">urbo.coffe — небольшая кофейня, где мы обжариваем зерно сами и верим, что хороший кофе начинается с внимания к деталям.</p>
+>>>>>>> b1217df2146ab3b7d1f1c3f0e670bff4c398a964
     <div class="info-grid">
       <div class="info-card">
         <h3>Наша история</h3>
@@ -174,22 +186,38 @@ footer{padding:30px 5vw;text-align:center;color:var(--muted);font-size:.9rem;bor
       </div>
       <div class="info-card">
         <h3>Телефон и WhatsApp</h3>
+<<<<<<< HEAD
         <p><a href="https://wa.me/77788068949">+7 778 806 89 49</a></p>
       </div>
       <div class="info-card">
         <h3>Instagram</h3>
         <p><a href="https://instagram.com/urbo.coffee">@urbo.coffee</a></p>
+=======
+        <p><a href="https://wa.me/77000000000">+7 700 000 00 00</a></p>
+      </div>
+      <div class="info-card">
+        <h3>Instagram</h3>
+        <p><a href="https://instagram.com/urbo.coffe">@urbo.coffe</a></p>
+>>>>>>> b1217df2146ab3b7d1f1c3f0e670bff4c398a964
       </div>
     </div>
   </div>
 </section>
 
+<<<<<<< HEAD
 <footer>© 2026 urbo.coffee. Все права защищены.</footer>
+=======
+<footer>© 2026 urbo.coffe. Все права защищены.</footer>
+>>>>>>> b1217df2146ab3b7d1f1c3f0e670bff4c398a964
 
 <div class="toast" id="toast"></div>
 
 <script>
+<<<<<<< HEAD
 const WHATSAPP_NUMBER = "77788068949"; // замените на номер кофейни
+=======
+const WHATSAPP_NUMBER = "77000000000"; // замените на номер кофейни
+>>>>>>> b1217df2146ab3b7d1f1c3f0e670bff4c398a964
 
 const MENU = [
   { cat: "Эспрессо", items: [
@@ -305,14 +333,22 @@ function submitOrder(ev){
   const lines = entries.map(e => `• ${e.name} x${e.qty} — ${fmt(e.price * e.qty)}`);
   const total = entries.reduce((s, e) => s + e.price * e.qty, 0);
   const text =
+<<<<<<< HEAD
 `Новый предзаказ urbo.coffee
+=======
+`Новый предзаказ urbo.coffe
+>>>>>>> b1217df2146ab3b7d1f1c3f0e670bff4c398a964
 Имя: ${f.name.value}
 Телефон: ${f.phone.value}
 Самовывоз в: ${f.time.value}
 ${lines.join("\n")}
 Итого: ${fmt(total)}
 ${f.comment.value ? "Комментарий: " + f.comment.value : ""}`.trim();
+<<<<<<< HEAD
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+=======
+  const url = `https://wa.me/${87788068949}?text=${encodeURIComponent(text)}`;
+>>>>>>> b1217df2146ab3b7d1f1c3f0e670bff4c398a964
   window.open(url, "_blank");
   showToast("Заказ отправлен. Ждём вас!");
 }
